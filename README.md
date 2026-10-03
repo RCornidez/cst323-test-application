@@ -1,4 +1,4 @@
-# Running the application
+# Running the application locally
 
 1. start the database
 ```bash
@@ -9,4 +9,14 @@ docker compose up -d
 
 3. initialize schema and seed sample data using dbeaver script functionality
 
+4. run the springboot api
+```bash
+cd springboot-api
+./mvnw spring-boot:run
+```
 
+5. run the react application
+```bash
+cd react-app
+npm run dev
+```
