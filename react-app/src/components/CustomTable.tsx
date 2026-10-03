@@ -22,9 +22,11 @@ function CustomTable<T>({
     return (
         <Table bordered striped responsive  hover >
             <thead>
-                {columns.map(
-                    column => <th key={column.key}>{column.header}</th>
-                )}
+                <tr>
+                    {columns.map(
+                        column => <th key={column.key}>{column.header}</th>
+                    )}
+                </tr>
             </thead>
             <tbody>
                 {rows.length === 0 ? (
